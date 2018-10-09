@@ -1,0 +1,13 @@
+"""
+To implement a new thread using the threading module, you have to do the following:
+
+step-1: Define a new subclass of the Thread class.
+
+step-2: Override the __init__(self [,args]) method to add additional arguments.
+
+step-3: Then, override the run(self [,args]) method to implement what the thread should do when started.
+
+Once you have created the new Thread subclass, you can create an instance of it and then start a new
+thread by invoking the start(), which will in turn call run() method.
+
+"""

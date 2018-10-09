@@ -1,0 +1,65 @@
+#Destroying Objects (Garbage Collection)
+
+"""Python automatically allocates and de-allocates memory.
+The user does not have to preallocate or deallocate memory by hand as one has to
+when using dynamic memory allocation in languages such as C or C++. Python uses
+two strategies for memory allocation-reference counting and automatic garbage
+collection.
+
+i) Reference Counting
+
+Prior to Python version 2.0, the Python interpreter only used reference counting
+for memory management. Reference counting works by counting the number of times
+an object is referenced by other objects in the system. Python's garbage
+collector runs during program execution and is triggered when an object's
+reference count reaches zero. An object's reference count changes as the number
+of aliases that point to it change. An object's reference count increases when
+it is assigned a new name or placed in a container (list, tuple or dictionary).
+The object's reference count decreases when it is deleted with del, its
+reference is reassigned, or its reference goes out of scope. When an object's
+reference count reaches zero, Python collects it automatically. Consider the
+code given below:   """
+
+X=50 # an object X is created which is bound to 50.
+Y=X # increase in reference count of 50
+Z[0]={Y} # increase in reference count of 50
+del X # decrease in reference count of 50
+Y=10 # decrease in reference count of 50
+
+
+"""You can see that a class can implement the special method __del__(), called a
+destructor, that is invoked when the instance is about to be destroyed. This
+method might be used to clean up any non-memory resources used by an instance.
+
+Reference counting is extremely efficient but it does have some caveats. One
+such caveat is that it cannot handle reference cycles. A reference cycle is
+when there is no way to reach an object but its reference count is still
+greater than zero. The easiest way to create a reference cycle is to create an object
+which refers to itself as in the example below:    """
+
+def reference_cycle():
+x=[ ]
+x.append(x)
+reference_cycle()
+
+"""In the above example since reference_cycle( ) creates an object x which refers
+to itself (statement x.append(x)), x will not automatically be freed when the
+function returns. This will cause the memory that x is using to be held onto
+until the Python garbage collector is invoked.
+
+
+ii) Automatic Garbage Collection
+
+In this case garbage collection is a scheduled activity. Python schedules
+garbage collection based upon a threshold of object allocations and object
+de-allocations. Python deletes the objects which are not required, may it be
+built-in types or class instances, through the process named garbage collection.
+
+When the number of allocations minus the number of de-allocations are greater
+than the threshold number, the garbage collector is run and the unused block of
+memory is reclaimed. One can inspect the threshold for new objects by loading
+the gc module and asking for garbage collection thresholds.Automatic garbage
+collection will not run if your Python device is running out of memory. In such
+case, your application will throw exceptions, which must be handled otherwise
+your application will crash. Also, the automatic garbage collection occurs more
+for the number of free objects than the size of objects.    """

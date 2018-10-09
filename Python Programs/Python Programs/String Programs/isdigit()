@@ -1,0 +1,6 @@
+#Checking the digit (isdigit) nature of a character in a string
+
+a="9ndia";
+b=a[0].isdigit();
+
+print "Is 9 a digit:",b;

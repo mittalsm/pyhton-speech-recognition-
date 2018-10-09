@@ -1,0 +1,54 @@
+"""  Differrence b/w List & Dictionary
+     ---------------------------------
+A dictionary is like a list, but more in general. In a list, index value is an integer, while in a dictionary index
+value can be any other data type and are called keys. The key will be used as a string as it is easy to recall. A
+dictionary is an extremely useful data storage construct for storing and retrieving all key value pairs,
+where each element is accessed (or indexed) by a unique key. However, dictionary keys are not in
+sequences and hence maintain no left-to-right order.
+
+Key-value pair: We can refer to a dictionary as a mapping between a set of indices (which are called keys)
+and a set of values. Each key maps a value. The association of a key and a value is called a key-value pair.
+
+Syntax:
+my_dict = {'key1': 'value1','key2': 'value2','key3': 'value3'…'keyn': 'valuen'}
+
+"""
+
+#declaration and initialization of dictionary in python
+
+
+month=dict()
+print "\n An empty dictionary:",month
+
+#assigining value at a string index of dictionary
+month["one"]="January"
+month["two"]="Feb"
+month["three"]="March"
+month["Four"]="Apirl"
+month["Five"]="May"
+month["Six"]="June"
+month["Seven"]="July"
+
+print "\n Dictionary with string index:",month
+
+#assigining value at a integer index of dictionary
+month[0]="January"
+month[1]="Feb"
+month[2]="March"
+month[3]="Apirl"
+month[4]="May"
+month[5]="June"
+month[6]="July"
+
+print "\n Dictionary with integer index:",month
+
+#assigining value at a alphanumeric index of dictionary
+month["one"]="January"
+month["2"]="Feb"
+month["three"]="March"
+month["4"]="Apirl"
+month["Five"]="May"
+month["5"]="June"
+month["Seven"]="July"
+
+print "\n Dictionary with alphanumeric index:",month

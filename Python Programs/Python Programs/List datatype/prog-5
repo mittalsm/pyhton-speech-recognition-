@@ -1,0 +1,25 @@
+
+#Delete an element from a given index of a List using del()
+
+
+L1=[500,1000,1500,2000,2300,140]
+print "\n Original List",L1
+del L1[2]
+print "\n List after deletion of element at 2nd index:",L1
+del L1[1]
+print "\n List after deletion of element at 1st index:",L1
+del L1[3]
+print "\n List after deletion of element at 3rd index:",L1
+del L1[1]
+print "\n List after deletion of element at 1st index:",L1
+del L1[0]
+print "\n List after deletion of element at 0th index:",L1
+del L1[0]
+print "\n List after deletion of element at 0th index:",L1
+
+#delete over an empty list
+print"No further delete is allowed over an empty list"
+print "\n A syntax error will be generated for above operation"
+del L1[0]
+print "\n List after delete of element at 0th index:",L1
+

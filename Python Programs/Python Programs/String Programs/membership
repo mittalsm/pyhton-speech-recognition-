@@ -1,0 +1,23 @@
+#Membership (in) of strings
+
+a=['Sachin','Saurav','Rahul'];
+
+b='Sachin' in a;
+
+print "Is Sachin in list a:",b;
+
+c='Saurav' in a;
+
+print "Is Saurav in list a:",c;
+
+d='Rahul' in a;
+
+print "Is Rahul in list a:",d;
+
+e='Jadeja' in a;
+
+print "Is Jadeja in list a:",e;
+
+f='Dhoni' in a;
+
+print "Is Dhoni in list a:",f;

@@ -1,0 +1,25 @@
+
+
+#to check whether given key has some element assigned to it through has_key() in python
+
+month=dict()
+print "\n An empty dictionary:",month
+
+#assigining value at a string index of dictionary
+month["one"]="January"
+month["2"]="Feb"
+month["three"]="March"
+month["4"]="Apirl"
+month["Five"]="May"
+month["6"]="June"
+month["Seven"]="July"
+
+print "\n Dictionary with string index:",month
+print "\n Element at index 2:",month.has_key("2")
+print "\n Element at index five:",month.has_key("five")
+print "\n Element at index one:",month.has_key("one")
+print "\n Element at index 6:",month.has_key("6")
+print "\n Element at index three:",month.has_key("three")
+print "\n Element at index 4:",month.has_key("4")
+
+

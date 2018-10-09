@@ -1,0 +1,7 @@
+#Concatenation (+) of strings
+
+a=raw_input("\n Enter first string:");
+b=raw_input("\n Enter second string:");
+c=a+" "+b;
+
+print "The concatenated string is:",c;

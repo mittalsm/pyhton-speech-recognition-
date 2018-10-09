@@ -1,0 +1,6 @@
+#To split (split()) a string into sub-parts
+
+a="Magnificent";
+b=a.lstrip('f');
+
+print "The substring obtained is:",b;

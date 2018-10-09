@@ -1,0 +1,13 @@
+lists = [ ]
+f = open('testfile.text', 'r')
+
+while 1:
+         try:
+              lists.append(f.readline())
+              
+         except EOFError:
+                           break
+         else :
+                print lists
+                break
+f.close()

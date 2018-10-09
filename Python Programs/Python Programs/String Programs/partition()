@@ -1,0 +1,6 @@
+#To partition (partition()) a string into sub-parts
+
+a="India";
+b=a.partition('d');
+
+print "The modified string:",b;

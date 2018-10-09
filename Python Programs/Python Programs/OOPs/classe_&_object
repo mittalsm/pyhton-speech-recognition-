@@ -1,0 +1,15 @@
+#Concept of class and objects
+
+class A:
+         #defining data members rather than simply daclaring
+         a=10;
+         b=20;
+         #defing the member function using self
+         def abc(self): print "great";
+
+obj= A();                     #object creation
+obj.abc()                     #member function access
+print "a:",obj.a,"b:",obj.b;  #data member acces
+
+
+         

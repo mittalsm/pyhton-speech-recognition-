@@ -1,0 +1,22 @@
+def push(contents):
+    if len(stack) >= limit:
+        print 'Stack Overflow!'
+    else:
+        stack.append(contents)
+    print 'Stack after Push',stack
+def pop():
+    if len(stack) <= 0:
+        print 'Stack Underflow!'
+        return 0
+    else:
+        return stack.pop()
+stack = []
+top,traversal,contents = -1,0,0
+limit = input('Enter the no of elements to be stored in stack:')
+for traversal in range(limit):
+         contents = input('Enter element '+str(traversal)+':')
+         push(contents)
+         traversal = 0
+         for traversal in range(limit):
+                 print 'Popping '+str(limit-traversal)+'th element:',pop()
+                 print 'Stack after Popping!',stack

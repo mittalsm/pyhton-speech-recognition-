@@ -1,0 +1,7 @@
+#Slice (m:n) of strings
+
+a=('Sachin','Saurav','Rahul','Ajay','Vijay','Dhoni');
+
+#b=a.slice[3,6];
+
+print "\n New List:",a.slice[3:6];

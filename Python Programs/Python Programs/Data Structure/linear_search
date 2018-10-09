@@ -1,0 +1,19 @@
+#Python Program to search an element ELEM from the list called DATA_LIST
+
+def linear_search(n):
+     s = [4,8,45,24,10,32,9,56]
+     iterations = 0
+     for i in s:
+          iterations += 1
+          if i == n:
+               print 'Element found at position:','=',str(iterations)
+               return
+     print str(n),'not found'
+
+
+linear_search(24)
+linear_search(9)
+linear_search(8)
+linear_search(56)
+linear_search(10)
+linear_search(100)

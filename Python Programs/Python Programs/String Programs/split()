@@ -1,0 +1,6 @@
+#To split (split()) a string into sub-parts
+
+a="Magnificent";
+b=a.split('i');
+
+print "The modified string:",b;

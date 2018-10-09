@@ -1,0 +1,22 @@
+#!/usr/bin/python
+
+import sqlite3
+
+conn = sqlite3.connect('test.db')
+print "Opened database successfully";
+
+conn.execute("INSERT INTO STUDENT (ROLL_NO,NAME,AGE,ADDRESS,MARKS) \
+      VALUES (1, 'Ajay', 12, '45, Vikas Puri', 84.87 )");
+
+conn.execute("INSERT INTO STUDENT (ROLL_NO,NAME,AGE,ADDRESS,MARKS) \
+      VALUES (2, 'Brijesh', 11, '75, Janak Puri', 94.87 )");
+
+conn.execute("INSERT INTO STUDENT (ROLL_NO,NAME,AGE,ADDRESS,MARKS) \
+      VALUES (3, 'Chitra', 14, '342, Maya Puri', 74.87 )");
+
+conn.execute("INSERT INTO STUDENT (ROLL_NO,NAME,AGE,ADDRESS,MARKS) \
+      VALUES (4, 'Gautam', 16, '121, Vaishali', 87.62 )");
+
+conn.commit()
+print "Records created successfully";
+conn.close()

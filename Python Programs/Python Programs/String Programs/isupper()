@@ -1,0 +1,6 @@
+#Checking the uppercase(isupper) nature of a string
+
+a="INDIA";
+b=a.isupper();
+
+print "Is ",a,"in uppercase:",b;

@@ -1,0 +1,6 @@
+#Replacing (replace) a character in a string
+
+a="D#ctat#on";
+b=a.replace('#','i');
+
+print "The modified string is:",b;

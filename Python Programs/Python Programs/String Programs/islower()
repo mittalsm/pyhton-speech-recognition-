@@ -1,0 +1,6 @@
+#Checking the lowercase(islower) nature of a string
+
+a="india";
+b=a.islower();
+
+print "Is ",a,"in lowercase:",b;

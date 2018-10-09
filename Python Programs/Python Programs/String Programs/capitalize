@@ -1,0 +1,6 @@
+#Capitalize the string
+
+a=raw_input("\n Enter a string:");
+b=a.capitalize();
+
+print "The capitalization of string ",a," is:",b;

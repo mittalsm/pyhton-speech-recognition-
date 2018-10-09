@@ -1,0 +1,18 @@
+"""Names declared with global keyword have to be referred at the file level.
+This is because the global statement indicates that the particular variable
+lives in the global scope. If no global statement is being used, the
+assignment to the name is always in the innermost local scope."""
+
+x=5
+def func1():
+             x=2
+             x=x+1;
+def func2():
+             global x
+             x=x+1
+             print x
+
+func1()
+print x
+func2()
+print x

@@ -1,0 +1,7 @@
+#Repetition (*) of strings
+
+a=raw_input("\n Enter a string:");
+n=input("\n Enter number of times a string is to be repeated:");
+c=a*n;
+
+print "The ",n," times repetition of string ",a," is:",c;

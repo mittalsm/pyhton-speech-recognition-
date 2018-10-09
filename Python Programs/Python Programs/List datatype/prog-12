@@ -1,0 +1,18 @@
+
+#Use of '*' operator to repeat the list given number of times
+
+
+L1=[78,23,56,32]
+print "\n Original List",L1
+
+print "\n Repeated List obtained 4 times through \'*\' operator",4*L1
+
+print "\n Lenght of repeated list:",len(4*L1)
+
+print "\n Repeated List obtained 2 times through \'*\' operator",2*L1
+
+print "\n Lenght of repeated list:",len(2*L1)
+
+print "\n Repeated List obtained 6 times through \'*\' operator",6*L1
+
+print "\n Lenght of repeated list:",len(6*L1)

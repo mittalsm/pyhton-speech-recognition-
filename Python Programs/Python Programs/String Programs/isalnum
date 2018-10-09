@@ -1,0 +1,6 @@
+#Checking the alphanumeric (isalnum) nature of a character in a string
+
+a="10ndia";
+b=a[0].isalnum();
+
+print "is I alphanumeric:",b;

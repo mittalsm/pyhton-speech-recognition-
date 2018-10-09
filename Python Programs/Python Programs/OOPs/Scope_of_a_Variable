@@ -1,0 +1,13 @@
+"""In Python, names of all types of variables are treated in same manner.
+That means numbers, strings,functions, types, modules, classes - all are
+treated in the same way. Also a name can refer to only one thing at a time."""
+
+var = 10 + 5
+print var
+
+def var(y):
+            return y*10
+print var(6)   #here a var is treated like a variable rather than a function
+
+var = "Hello"
+print var

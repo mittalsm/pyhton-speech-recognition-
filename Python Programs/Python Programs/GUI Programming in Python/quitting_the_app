@@ -1,0 +1,10 @@
+
+#Program to quit the application
+
+from Tkinter import *
+top = Tk()
+helloLab = Label(text="Hello World!")
+helloLab.pack()
+quitBut = Button(text="Quit", command = top.quit)
+quitBut.pack()
+top.mainloop()

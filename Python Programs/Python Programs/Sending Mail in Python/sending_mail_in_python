@@ -1,0 +1,28 @@
+"""
+TLS (Transport Layer Security) and SSL (Secure Sockets Layer) are protocols that provide data encryption and authentication
+between applications and servers in scenarios where that data is being sent across an insecure network, such as checking your
+email (How does the Secure Socket Layer work?). The terms SSL and TLS are often used interchangeably or in conjunction with
+each other (TLS/SSL), but one is in fact the predecessor of the other — SSL 3.0 served as the basis for TLS 1.0 which, as a
+result, is sometimes referred to as SSL 3.1.
+"""
+2
+import smtplib      #smtp-library
+
+sender = "nishik.kumar31@gmail.com"
+receivers = "nishik.kumar21@gmail.com"
+
+message = """From: From Person <from@fromdomain.com>
+To: To Person <to@todomain.com>
+Subject: SMTP e-mail test
+
+This is a test e-mail message.
+"""
+
+try:
+     smtpObj = smtplib.SMTP('smtp.gmail.com',587)                    #smtpObj is basically an user-defined object
+     smtpObj.starttls()
+     smtpObj.login("nishik.kumar31@gmail.com","MyNameIsBaaghh")
+     smtpObj.sendmail(sender, receivers, message)         
+     print "Successfully sent email"
+except Exception:
+                   print "Error: unable to send email"

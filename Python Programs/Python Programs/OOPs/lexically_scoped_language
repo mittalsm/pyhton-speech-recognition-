@@ -1,0 +1,28 @@
+"""The names always belong to the namespace where they are bound, irrespective
+of whether they are bound before or after they are referred. This is the reason
+which makes Python a lexically scoped language. The variable scopes are
+determined entirely by the locations of the variables in the source code of your
+program files, not by function calls. If a binding for a variable appears
+anywhere inside a function, the variable name is local to that function."""
+
+x = 10
+def func1():
+             x=50
+             print x
+x=12             
+def func2():
+             print x
+
+x=25
+def func3(p):
+             if p<10:
+                      x=2 
+                      print x
+                      print p
+
+x=12
+
+func1()
+func2()
+func3(20)
+func3(5)

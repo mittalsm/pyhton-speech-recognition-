@@ -1,0 +1,11 @@
+#Write a program to illustrate the concept of for
+#syntax:  for i in range(start,stop,step):  loop body
+
+#write a program to print first n natural numbers
+
+n=input("Enter value for n upto which a sequence is to be generated:")
+
+for i in range(1,n+1,+
+
+
+               1): print i

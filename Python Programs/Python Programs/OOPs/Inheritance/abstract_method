@@ -1,0 +1,18 @@
+"""An abstract method is a method declared in a parent class, but not implemented in it. The implementation
+of such a method can be given in the derived class."""
+
+
+class circle(object):
+                         def get_radius(self):
+                                                 raise InvalidMethoException
+
+class circle1(circle):
+                         def __init__(self,radius):
+                                                    self.radius=radius
+                         def get_radius(self):
+                                                    return self.radius
+
+
+
+c=circle1(5);
+print "Radius of a circle:",c.get_radius();

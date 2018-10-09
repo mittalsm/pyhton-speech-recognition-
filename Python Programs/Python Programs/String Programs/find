@@ -1,0 +1,6 @@
+#finding (find()) the location of a character in a string
+
+a="India is a nice country";
+b=a.find('c');
+
+print "The character c is located at:",b;

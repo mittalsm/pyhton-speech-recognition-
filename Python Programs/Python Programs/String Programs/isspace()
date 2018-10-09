@@ -1,0 +1,6 @@
+#Checking for space(ispace) in a string
+
+a="India is our country";
+b=a[5].isspace();
+
+print "Is index 5 is space:",b;

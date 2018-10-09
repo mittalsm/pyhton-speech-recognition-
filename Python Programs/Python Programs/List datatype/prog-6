@@ -1,0 +1,25 @@
+
+#Remove a specified element from a List using remove()
+
+
+L1=[500,1000,1500,2000,2300,140]
+print "\n Original List",L1
+L1.remove(1500)
+print "\n List after removal of element 1500:",L1
+L1.remove(500)
+print "\n List after removal of element 500:",L1
+L1.remove(140)
+print "\n List after removal of element 140:",L1
+L1.remove(2000)
+print "\n List after removal of element 2000:",L1
+L1.remove(1000)
+print "\n List after removal of element 1000:",L1
+L1.remove(2300)
+print "\n List after removal of element 2300:",L1
+
+#removal from an empty list
+print"No further removal is allowed over an empty list"
+print "\n A syntax error will be generated for above operation"
+L1.remove()
+print "\n List after removal of element at 0th index:",L1
+

@@ -1,0 +1,28 @@
+#Concept of vars  and dir to retrieve Instance Atrributes
+"""vars() : This function displays the attributes of the instance in the form
+            of a dictionary.
+   dir()  : This function lists more attributes than vars()because it is not
+            limited to the dictionary of instance. It also displays the class
+            attributes."""
+
+class A:
+         #initialization
+         apple=0
+         orange=0
+
+         def __init__(self,apple,orange):
+                                          self.apple=apple
+                                          self.orange=orange
+         def fruits(self):
+                           print "apple:",self.apple
+                           print "orange:",self.orange
+
+a=A(10,20);    #object creation
+
+x=vars(a);
+print "Instanse attribute in case of var():",x
+
+y=dir(a);
+print "Instanse attribute in case of dir():",y
+
+a.fruits();

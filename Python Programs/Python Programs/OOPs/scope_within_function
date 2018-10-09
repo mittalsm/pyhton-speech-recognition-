@@ -1,0 +1,20 @@
+"""if a variable is created in a particular function, then its scope is that
+function only, since that function creates its own namespace where it resides.
+So any variable inside the function will be local to that namespace."""
+
+
+x = 10
+def exam():
+            print x
+
+def test():
+            x = 5
+            print x
+
+def marks(x):
+             print x
+
+print x
+exam()
+test()
+marks(20)

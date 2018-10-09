@@ -1,0 +1,25 @@
+
+"""
+
+This widget implements a display box where you can place text or images. The text displayed by this widget can be updated at any time you want.
+
+It is also possible to underline part of the text (like to identify a keyboard shortcut) and span the text across multiple lines.
+
+Syntax:
+Here is the simple syntax to create this widget:
+
+ w = Label ( master, option, ... )
+
+"""
+
+from Tkinter import *
+
+root = Tk()
+
+var = StringVar()
+var.set("Hey!? How are you doing?")
+
+label = Label( root, textvariable=var, relief=RAISED )
+
+label.pack()
+root.mainloop()

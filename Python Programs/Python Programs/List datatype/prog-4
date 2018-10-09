@@ -1,0 +1,21 @@
+
+#Pop (Deletion the top/last) element from List
+
+
+L1=[500,1000,1500,2000]
+print "\n Original List",L1
+a = L1.pop()
+print "\n List after pop of element ",a,":",L1
+a = L1.pop()
+print "\n List after pop of element ",a,":",L1
+a = L1.pop()
+print "\n List after pop of element ",a,":",L1
+a = L1.pop()
+print "\n List after pop of element ",a,":",L1
+
+#pop over an empty list
+print"No further pop is allowed over an empty list"
+print "\n A syntax error will be generated for above operation"
+a = L1.pop()
+print "\n List after pop of element ",a,":",L1
+

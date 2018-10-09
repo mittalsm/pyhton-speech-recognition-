@@ -1,0 +1,40 @@
+
+
+#clearing all element of dictionary in python using clear()
+
+
+month=dict()
+print "\n An empty dictionary:",month
+
+#assigining value at a string index of dictionary
+month["one"]="January"
+month["two"]="Feb"
+month["three"]="March"
+month["Four"]="Apirl"
+month["Five"]="May"
+month["Six"]="June"
+month["Seven"]="July"
+
+print "\n Dictionary with string index:",month
+month.clear() 
+print"\n After clearing elements of Dictionary-1:",month
+
+#assigining value at a integer index of dictionary
+t=dict()
+t[0]="January"
+t[1]="Feb"
+t[2]="March"
+t[3]="Apirl"
+
+print "\n Dictionary with integer index:",t
+t.clear() 
+print"\n After clearing elements of Dictionary-2:",t
+
+#assigining value at a alphanumeric index of dictionary
+x=dict()
+x["one"]="January"
+x["2"]="Feb"
+
+print "\n Dictionary with alphanumeric index:",x
+x.clear() 
+print"\n After clearing elements of Dictionary-3:",x

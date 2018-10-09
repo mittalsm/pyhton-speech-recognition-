@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+import sqlite3
+
+conn = sqlite3.connect('test.db')
+
+cursor = conn.execute("SELECT roll_no, name,age, address, marks  from STUDENT")
+for row in cursor:
+   print "ROLL_NO = ", row[0]
+   print "NAME = ", row[1]
+   print "AGE = ", row[2]
+   print "ADDRESS = ", row[3]
+   print "MARKS = ", row[4], "\n"
+
+print "Operation done successfully";
+conn.close()

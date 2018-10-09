@@ -1,0 +1,67 @@
+"""The feature of overriding methods enables the programmer to provide specific implementation to a
+method in the subclass which is already implemented in the superclass. The version of a method that is
+executed will be determined by the object that is used to invoke it. If an object of a parent class is used to
+invoke the method, then the version in the parent class will be executed, but if an object of the subclass is
+used to invoke the method, then the version in the child class will be executed.
+"""
+
+class student(object):
+                       def __init__(self,Id,name):
+                                                   self.Id=Id
+                                                   self.name=name
+                       def getName(self):
+                                            print self.name
+                       def getId(self):
+                                            print self.Id
+                       def show(self):
+                                            print self.name
+                                            print self.Id
+
+
+class Teacher(object):
+                        def __init__(self,tec_Id,tec_name, subject):
+                                                                      self.tec_Id=tec_Id
+                                                                      self.tec_name=tec_name
+                                                                      self.subject=subject
+                        def getName(self):
+                                               print self.tec_name
+                        def getId(self):
+                                               print self.tec_Id
+                        def getSubject(self):
+                                               print self.subject
+
+                        def show(self):
+                                               print self. tec_name
+                                               print self.tec_Id
+                                               print self.subject
+
+class school(student,Teacher):
+                                def __init__(self, ID, name, tec_Id, tec_name, subject, sch_Id):
+                                                                                                  student.__init__ (self,ID,name)
+                                                                                                  Teacher. __init__(self,tec_Id,tec_name, subject)
+                                                                                                  self.sch_Id= sch_Id
+                                def getId(self):
+                                                    student.getId(self)
+                                                    Teacher.getId(self)
+                                                    return self.sch_Id
+                                def getName(self):
+                                                    student.getName(self)
+                                                    Teacher.getName(self)
+                                def show(self):
+                                                   # student.show(self)
+                                                   # Teacher.show(self)
+                                                     print self.sch_Id
+
+"""
+print "\t Student Details";
+s=student(14,"Ashish");
+s.show();
+
+print "\n \t Teacher Details";
+t=Teacher(21,"Ravi Ranjan",".NET");
+t.show();
+"""
+
+print "\n \t Complete Student Details";
+sc=school(14,"Ashish",21,"Ravi Ranjan",".NET",95);
+sc.show();          

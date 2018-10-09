@@ -1,0 +1,15 @@
+#Testing for a valid integer
+
+
+while True:
+            try:
+                   x = int(raw_input("Enter a number:"))
+                   print "Valid Integer"
+                   break
+            except:
+                               print " This was not a valid number. Enter a valid number"
+            finally:
+                               print " It was a nice program"
+
+
+

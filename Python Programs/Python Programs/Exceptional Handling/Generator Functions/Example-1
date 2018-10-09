@@ -1,0 +1,11 @@
+#Squares using generator
+
+
+def square(n):
+                for i in range(n):
+                                    yield i**2
+
+
+#Function call
+for k in square(6):
+                       print k,

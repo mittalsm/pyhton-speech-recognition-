@@ -1,0 +1,13 @@
+
+#Use of '+' operator to concatenate the two lists
+
+
+L1=[78,23,56,32]
+print "\n First List",L1
+
+L2=[34,94,245,679]
+print "\n Second List",L2
+
+L3=L1+L2
+print "\n Concatenated List obtained through \'+\' operator",L3
+

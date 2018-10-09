@@ -1,0 +1,121 @@
+"""-------------------------------------------------------------------
+-            Project Titile:- School Annual Prize Distribution  
+----------------------------------------------------------------------
+-                        Concepts Used
+-
+-                   1. OOPs (Object Oriented Programming)
+
+-                   2. Multiple Inhritance
+-
+-                   3. Exceptional Handling   
+-
+-----------------------------------------------------------------------
+
+
+class student(object):
+                        Id=0
+                        name=''
+                        c=''
+                        english=0
+                        hindi=0
+                        maths=0
+                        science=0
+                        sst=0
+                        total=0
+                        percent=0.0
+                        
+                        def __init__(self,Id,name,c,english,hindi,maths,science,sst):
+                                                     self.Id=Id
+                                                     self.name=name
+                                                     self.c=c
+                                                     self.english=english
+                                                     self.hindi=hindi
+                                                     self.maths=maths
+                                                     self.science=science
+                                                     self.sst=sst
+                        def getName(self):
+                                            return self.name
+                        def getId(self):
+                                            return self.Id
+                        def getResult(self):
+
+                                            try:
+                                                        self.total =  (self.english+self.hindi+self.maths+self.science+self.sst)
+                                                        self.percent = self.total/5
+                                            except:
+                                                        print "Sorry! You have made mistake in Percentage Calculation"
+                                            else:
+                                                        print "Class:",self.c
+                                                        print "Marks in English:",self.english
+                                                        print "Marks in Hindi:",self.hindi
+                                                        print "Marks in Maths:",self.maths
+                                                        print "Marks in Science:",self.science
+                                                        print "Marks in S.St.:",self.sst
+                                                        print "Total Marks:",self.total
+                                                        print "Percentage:",self.percent
+                                            finally:
+                                                        print "Student's Details Taken and executed successfully"
+                        def show1(self):
+                                        
+                                            print "Student Name:",self.name
+                                            print "Roll No:",self.Id
+
+class Teacher(object):
+                        def __init__(self,tec_Id,tec_name, subject):
+                                                                      self.tec_Id=tec_Id
+                                                                      self.tec_name=tec_name
+                                                                      self.subject=subject
+                        def getName(self):
+                                            return self.tec_name
+                        def getId(self):
+                                            return self.tec_Id
+                        def getSubject(self):
+                                                return self.ubject
+                        def show2(self):
+                                         print "Teacher Name:",self.tec_name
+                                         print "Teacher Id:",self.tec_Id
+                                         print "Subject:",self.subject
+
+class school(student,Teacher):
+                                  def __init__(self, ID, name, c, tec_Id, tec_name, subject, s1, s2, s3, s4, s5, sch_Id):
+                                                                                                    student.__init__ (self,ID,name,c,s1,s2,s3,s4,s5)
+                                                                                                    Teacher. __init__(self,tec_Id,tec_name, subject)
+                                                                                                    self.sch_Id= sch_Id
+                                  def getId(self ):
+                                                      return self.sch_Id
+                                  def display(self):
+                                                      print "School Details:", self.sch_Id
+                                
+
+
+
+print "\n Enter student details for first Prize"
+roll_no = input("\n Enter Roll_No:")
+st_name = raw_input("\n Enter Name:")
+st_class = raw_input("\n Enter Class:")
+sub1=input("\n Enter first subject marks:")
+sub2=input("\n Enter second subject marks:")
+sub3=input("\n Enter third subject marks:")
+sub4=input("\n Enter fourth subject marks:")
+sub5=input("\n Enter fifth subject marks:")
+
+print "\n\t Student Details"
+s=student(roll_no,st_name,st_class,sub1,sub2,sub3,sub4,sub5);
+s.show1();
+s.getResult();
+
+print "\n Enter Teacher details for first Prize"
+t_id = input("\n Enter Teacher Id:")
+t_name = raw_input("\n Enter His/Her Name:")
+t_subject = raw_input("\n Enter His/Her Subject:")
+
+print "\n\t Teacher Details"
+t=Teacher(t_id,t_name,t_subject);
+t.show2();
+
+print "\n\t Gurukul International School Prize Distribution"
+
+sc=school(roll_no,st_name,st_class,t_id,t_name,t_subject,sub1,sub2,sub3,sub4,sub5,"Gurukul International School, affiliated to Balujalabs, Janak Puri, Pillar No-636");
+sc.show1();
+sc.show2();
+sc.display();

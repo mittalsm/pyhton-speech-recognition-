@@ -1,0 +1,14 @@
+#Write a program to illustrate the concept of while
+#syntax: start while(stop): loop body step
+
+#write a program to print first n natural numbers
+
+n=input("Enter value for n upto which a sequence is to be generated:")
+
+i=1                       #step-1:initialization step
+while(i<=n):              #step-2:test how far the loop goes to the end    
+             print i,
+             print "Harish",
+             print "In dia is a nice country",
+             print "Swachh Bharat Abhiyan"
+             i=i+1       #step-3:update each step to reach end of loop

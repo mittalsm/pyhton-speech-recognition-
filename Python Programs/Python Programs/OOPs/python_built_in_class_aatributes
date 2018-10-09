@@ -1,0 +1,36 @@
+"""Every Python class keeps the following built-in attributes and they can be
+accessed using dot operator like any other attribute:
+i) __dict__ : It gives the dictionary containing the class's namespace.
+ii) __doc__ : It returns the class's documentation string(also called docstring)
+              and if no docstring is defined for a class this built in attribute
+              returns None
+iii) __name__: It gives the class name.
+iv) __module__: It specifies the module name in which the class is defined.
+                This attribute is called "__main__" in interactive mode.
+v) __bases__ : It gives a possibly empty tuple containing the base classes,
+               in the order of their occurrence in the base class list. (You
+               will learn about base classes in the next chapter on Inheritance)
+
+"""
+
+
+class Test:
+            rollno=1
+            marks=75
+
+            def __init__(self,rollno,marks):
+                                              self.rollno=rollno
+                                              self.marks=marks
+            def display(self):
+                                print " Roll No : " , self.rollno
+                                print "Marks : " , self.marks
+                                print "Test.__doc__:" , Test.__doc__
+                                print "Test.__name__:" , Test.__name__
+                                print "Test.__module__:" , Test.__module__
+                                print "Test.__bases__:" , Test.__bases__
+                                print "Test.__dict__:" , Test.__dict__
+
+
+t=Test(50,40)    #object creation and constructor invocation
+t.display()
+del t              #This function is called when the instance is about to be destroyed. This is also called a destructor. It calls the method - object.__del__(self)

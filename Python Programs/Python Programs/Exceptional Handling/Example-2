@@ -1,0 +1,16 @@
+#Typical example of Excption Handling: Division By Zero
+
+def divide(x, y):
+                  try:
+                        result = x/y
+
+                  except ZeroDivisionError:
+                                             print "division by zero!"
+                  else:
+                            print "The result is", result
+                  finally:
+                            print "We are also executing finally clause"
+
+divide(10,2)
+print "\n","The result is:",
+divide(10,0)

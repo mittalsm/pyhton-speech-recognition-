@@ -1,0 +1,21 @@
+"""'Private' instance variables are those that cannot be accessed from outside the class. These attributes, may
+it be data or methods, can only be accessed from inside an object. These are used if we want to hide an
+attribute but these types of members don't exist in Python. However, if you still want to hide a member,
+Python provides a limited support called name "mangling". According to this,a name is prefixed with two
+leading underscores and no more than one trailing underscore will be considered as a private member. For
+example __pvt , __pvt_will be considered as mangled and so will be treated as private members of the class
+but not __pvt__ or _pvt__"""
+
+
+class A:
+         #defining data members rather than simply daclaring
+         a=10;
+         b=20;
+         __c=30;   #private data members
+         #defing the member function using self
+         def abc(self): print "great";
+
+obj= A();                     #object creation
+obj.abc()                     #member function access
+print "a:",obj.a,"b:",obj.b;  #data member acces
+#print "c:",obj.c;

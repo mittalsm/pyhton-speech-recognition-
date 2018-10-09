@@ -1,0 +1,6 @@
+#Changing the uppercase to lowercase(swapspace())or vice-versa of a string
+
+a="India";
+b=a.swapcase();
+
+print "The modified string:",b;

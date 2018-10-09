@@ -1,0 +1,16 @@
+
+#Finding length (i.e. number of elements present in the list) using len()
+
+
+L1=[78,23,56,32,89,132,45,200,34,94,245,679]
+print "\n First List",L1
+print "\n Length:",len(L1)
+
+L2=[78,23,45,200,34,94,245,679]
+print "\n Second List",L2
+print "\n Length:",len(L2)
+
+L3=[78,94,245,679]
+print "\n Third List",L3
+print "\n Length:",len(L3)
+

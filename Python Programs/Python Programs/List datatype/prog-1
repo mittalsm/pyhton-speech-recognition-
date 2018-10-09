@@ -1,0 +1,8 @@
+
+#declaration,initialization and  assignment of list
+
+
+L=[10,20,30,40,50]   #declaration & initialization of list
+L1=L[2:4]            #assignment of one list to another  
+print"\n List 1:",L
+print"\n L1st 2:",L1    #Syntax: Seq = L [start: stop: step]

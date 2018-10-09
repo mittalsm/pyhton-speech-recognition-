@@ -1,0 +1,16 @@
+#Concept of Constructor in python-using __init__
+
+
+class Mobile:
+              #declaring and initializing the data members
+              price = 0
+              model = "Null"
+              def __init__(self, price, model):
+                                                       self.price=price
+                                                       self.model="Nokia Lumia 720"
+              def displaydata(self):
+                                     print self.price, self.model
+
+
+M= Mobile(1000, 'Samsung')       #calling constructor
+M.displaydata()

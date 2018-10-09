@@ -1,0 +1,25 @@
+
+
+#to get element from a dictionary by soecifying its key through get() in python
+
+month=dict()
+print "\n An empty dictionary:",month
+
+#assigining value at a string index of dictionary
+month["one"]="January"
+month["2"]="Feb"
+month["three"]="March"
+month["4"]="Apirl"
+month["Five"]="May"
+month["6"]="June"
+month["Seven"]="July"
+
+print "\n Dictionary with string index:",month
+print "\n Element at index 2:",month.get("2")
+print "\n Element at index five:",month.get("five")
+print "\n Element at index one:",month.get("one")
+print "\n Element at index 6:",month.get("6")
+print "\n Element at index three:",month.get("three")
+print "\n Element at index 4:",month.get("4")
+
+

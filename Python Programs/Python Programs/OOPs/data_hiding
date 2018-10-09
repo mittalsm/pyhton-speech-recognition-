@@ -1,0 +1,28 @@
+"""Data hiding is a means to procure encapsulation. Python doesn't really
+enforce data-hiding in the true sense. The Python approach to getting
+encapsulation is by simply not using "private" data members. As discussed
+before, if something is particularly "private" you can use the double leading
+underscores to mark it as such, but this of course is nothing more than a
+marking. Basically it just acts as a reminder that such data is intended to be
+used only within the class. Remember that Python is a dynamic language and
+that you can add attributes or methods dynamically on an object."""
+
+
+class Health_profile:
+                      Weight=89
+                      Blood_group='B+'
+                      __BP=None         #private member
+
+                      def __init__(self):
+                                          self.__BP = "Hidden attribute"
+
+                      def display_BP(self):
+                                            print self.__BP
+
+H = Health_profile()
+#H.__BP
+H.display_BP()
+
+"""Python's sense of encapsulation means that you don't have to worry about
+implementation details. Also it does not matter whether or not an attribute
+has public or private access."""

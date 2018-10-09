@@ -1,0 +1,30 @@
+"""A static method of a Python class is a method that does not obey the usual
+convention in which self, an instance of the class, is the first argument to
+the method. It is just like any other function defined in the class but it is
+callable without creating the instance of the class. They belong to the class
+but they don't use the object self at all. To declare a static method, declare
+the method normally but precede it with the built-in staticmethod decorator
+called@staticmethod. Good candidates for static methods are methods that do
+not reference the self variable."""
+
+
+
+class Test:
+            @staticmethod
+            def Displaytest():
+                               print "This is a static method"
+Test.Displaytest()
+
+class T:
+         @staticmethod
+         def square(x):
+                        T.result= x*x
+                        
+                        
+                        
+T.square(5)
+print "Square of two number:",T.result 
+T.square(10)
+print "Square of two number:",T.result 
+T.square(20)
+print "Square of two number:",T.result 

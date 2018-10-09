@@ -1,0 +1,11 @@
+
+#Appending element at the end of List through append()
+
+
+L=[500,1000,1500,2000]
+L.append(2500)
+print "\n Append of first element into List:",L
+L.append(600)
+print "\n Append of second element into List:",L
+L.append(3900)
+print "\n Append of third element into List:",L

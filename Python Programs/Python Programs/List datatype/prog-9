@@ -1,0 +1,8 @@
+
+#Sort all elements in a List using sort() in ascending order (by default)
+
+
+L1=[78,23,56,32,89,132,45,200,34,94,245,679]
+print "\n Original List",L1
+L1.sort()
+print "\n List after sorting:",L1

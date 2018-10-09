@@ -1,0 +1,58 @@
+#Program for Multiple Inheritance
+
+class student(object):
+                        def __init__(self,Id,name):
+                                                     self.Id=Id
+                                                     self.name=name
+                        def getName(self):
+                                            return self.name
+                        def getId(self):
+                                            return self.Id
+                        def show1(self):
+                                            print self.name
+
+                                            print self.Id
+
+class Teacher(object):
+                        def __init__(self,tec_Id,tec_name, subject):
+                                                                      self.tec_Id=tec_Id
+                                                                      self.tec_name=tec_name
+                                                                      self.subject=subject
+                        def getName(self):
+                                            return self.tec_name
+                        def getId(self):
+                                            return self.tec_Id
+                        def getSubject(self):
+                                                return self.ubject
+                        def show2(self):
+                                         print self. tec_name
+                                         print self.tec_Id
+                                         print self.subject
+
+class school(student,Teacher):
+                                  def __init__(self, ID, name, tec_Id, tec_name, subject, sch_Id):
+                                                                                                    student.__init__ (self,ID,name)
+                                                                                                    Teacher. __init__(self,tec_Id,tec_name, subject)
+                                                                                                    self.sch_Id= sch_Id
+                                  def getId(self ):
+                                                      return self.sch_Id
+                                  def display(self):
+                                                      return self.sch_Id
+
+
+print "\n\t Student Details"
+
+s=student(28,"Radha",);
+print s.show1();
+
+print "\n\t Teacher Details"
+
+t=Teacher(102,"Ms. Archana","English");
+print t.show2();
+
+print "\n\t School Details"
+
+sc=school(18,"Palak Rajput",112,"Ms. Geeta","Maths","1045");
+print sc.show1();
+print sc.show2();
+print sc.display();

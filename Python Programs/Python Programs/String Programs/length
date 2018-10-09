@@ -1,0 +1,6 @@
+#Finding length (len) of strings
+
+a=raw_input("\n Enter a string:");
+n=len(a);
+
+print "The lenght of string ",a," is:",n;

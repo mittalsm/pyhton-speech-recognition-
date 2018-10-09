@@ -1,0 +1,16 @@
+
+#Insert element at a specified position in a List using insert()
+
+
+L1=[500,1000,1500]
+print "\n Original List",L1
+L1.insert(2,2500)
+print "\n List after insertion of element 2500 at index 2:",L1
+L1.insert(1,800)
+print "\n List after insertion of element 800 at index 1:",L1
+L1.insert(4,234)
+print "\n List after insertion of element 234 at index 4:",L1
+L1.insert(3,1700)
+print "\n List after insertion of element 1700 at index 3:",L1
+L1.insert(6,9500)
+print "\n List after insertion of element 9500 at index 6:",L1

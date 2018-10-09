@@ -1,0 +1,60 @@
+
+
+"""comparing two dictionaries in python using cmp()
+   ------------------------------------------------  
+Syntax:  cmp(dict1, dict2), where
+dict1 -- This is the first dictionary to be compared with dict2.
+dict2 -- This is the second dictionary to be compared with dict1.
+
+->cmp() returns 0 if both dictionaries are equal,
+->cmp() returns -1 if dict1 < dict2, and
+->cmp() returns 1 if dict1 > dic2.
+
+"""
+
+month=dict()
+print "\n An empty dictionary:",month
+
+#assigining value at a string index of dictionary
+month["one"]="January"
+month["two"]="Feb"
+month["three"]="March"
+month["Four"]="Apirl"
+month["Five"]="May"
+month["Six"]="June"
+month["Seven"]="July"
+
+print "\n Dictionary with string index:",month
+print "\n Length:",len(month)
+
+#assigining value at a integer index of dictionary
+t=dict()
+t[0]="January"
+t[1]="Feb"
+t[2]="March"
+t[3]="Apirl"
+
+print "\n Dictionary with integer index:",t
+print "\n Length:",len(t)
+
+
+#assigining value at a alphanumeric index of dictionary
+x=dict()
+x["one"]="January"
+x["2"]="Feb"
+
+print "\n Dictionary with alphanumeric index:",x
+print "\n Length:",len(x)
+
+s=dict()
+s=month                                        #assigning one dictionary to another
+print "\n Dictionary s:",s
+print "\n Length:",len(s)
+
+print"\n Comparing two dictionaries"
+
+print "\n cmp(s,month):",cmp(s,month)
+print "\n cmp(s,t):",cmp(s,t)
+print "\n cmp(t,s):",cmp(t,s)
+print "\n cmp(x,t):",cmp(x,t)
+print "\n cmp(t,x):",cmp(t,x)

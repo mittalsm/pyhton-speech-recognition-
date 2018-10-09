@@ -1,0 +1,16 @@
+# Check for armstrong number
+
+n=input("Enter any number:");
+
+n1=n
+arm=0
+while(n1>0):
+             rem = n1%10;
+             cube = rem*rem*rem;
+             arm=arm+cube;
+             n1=n1/10
+
+if(arm==n):
+             print n," is a armstrong number.";
+else:
+             print n," is not a armstrong number.";

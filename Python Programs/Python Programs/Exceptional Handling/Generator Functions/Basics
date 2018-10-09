@@ -1,0 +1,39 @@
+"""When a normal python function is called, in a program, the control from calling function is shifted to called
+function. Execution of called function starts from first line and continues until a return statement or
+exception or end of function is encountered. In all these situations, the control is returned back to caller
+function. That means any work done by the called function for providing the result is lost. To use it again
+we will again call the function and its execution will start from scratch.
+Sometimes in programming we need to have functions which are able to save its work, so that instead of
+starting from scratch the function starts working from the point where it was left last. In other words, a
+function should be able to yield a series of values instead of just returning a single value. Here returning a
+value also implies returning of control.
+Such functions are Generator functions. These functions can send back a value and later resume processing
+from the place, where they left off. This allows the function to produce a series of values - over time, rather
+than computing them all at once and returning a list of values.
+
+The primary difference between generator and normal function is that generator will yield a value instead
+of returning a value. It is the yield statement which allows the generator function to suspend the
+processing and send a value, simultaneously retaining the existing state of generator to resume processing
+over time.
+"""
+
+def counter (n):
+                  i = 1
+                  while(i<=n):
+                                   yield i
+                                   i+=1
+x=counter(3)
+print x.next()
+print x.next()
+print x.next() 
+
+
+
+"""
+Advantages of using generator
+------------------------------
+->These functions are better w.r.t. memory utilization and code performance, as they allow function to
+avoid doing all work at a time.
+->They provide a way to manually save the state between iterations. As the variables in function scope
+are saved and restored automatically.
+"""
